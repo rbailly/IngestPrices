@@ -1,0 +1,25 @@
+{
+	"name": "3colCSVProd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragePROD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Elookbooks_pricing.csv",
+				"folderPath": "Elookbook_pricing",
+				"container": "private"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

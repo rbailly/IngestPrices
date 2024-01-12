@@ -1,0 +1,122 @@
+{
+	"name": "eNewsTableDEV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseDev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Reception_Date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Sender",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sender_Group",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lang",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Object",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Html_Content",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Image_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Image_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Image_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Hashtag_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Hashtag_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Hashtag_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Visible",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Archive",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Sendable",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Public",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Downloadable",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Extra_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Extra_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Extra_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "email_uid",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Html_Content_Diorpress",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "eNews"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

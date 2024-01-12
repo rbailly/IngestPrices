@@ -1,0 +1,78 @@
+{
+	"name": "From3to4ColsOnDB",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "AzureSqlDatabaseDev",
+						"type": "LinkedServiceReference"
+					},
+					"name": "ThreeColTable"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "AzureSqlPROD",
+						"type": "LinkedServiceReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "derivedColumn1"
+				},
+				{
+					"name": "select1"
+				},
+				{
+					"name": "alterRow1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          SKU as string,",
+				"          MiddleStuff as string,",
+				"          Amount as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'table',",
+				"     store: 'sqlserver',",
+				"     schemaName: 'dbo',",
+				"     tableName: 'PricesTroisColTemp',",
+				"     isolationLevel: 'READ_UNCOMMITTED') ~> ThreeColTable",
+				"ThreeColTable derive(Code_Country = split(MiddleStuff,' ')[3],",
+				"          Code_Currency = split(MiddleStuff,' ')[4]) ~> derivedColumn1",
+				"derivedColumn1 select(mapColumn(",
+				"          SKU,",
+				"          Code_Country,",
+				"          Code_Currency,",
+				"          Amount",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 alterRow(upsertIf(SKU!=''&&Code_Country!=''&&Code_Currency!=''&&Amount!='')) ~> alterRow1",
+				"alterRow1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'table',",
+				"     store: 'sqlserver',",
+				"     schemaName: 'dbo',",
+				"     tableName: 'PPrices',",
+				"     insertable: false,",
+				"     updateable: false,",
+				"     deletable: false,",
+				"     upsertable: true,",
+				"     keys:['SKU','Code_Country','Code_Currency'],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'allErrors',",
+				"     transactionCommit: 'single',",
+				"     reportSuccessOnError: false) ~> sink1"
+			]
+		}
+	}
+}

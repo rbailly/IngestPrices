@@ -1,0 +1,34 @@
+{
+	"name": "AzureSqlPricesOnPROD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlPROD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKU",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code_Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code_Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Amount",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PPrices"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

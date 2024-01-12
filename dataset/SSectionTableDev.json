@@ -1,0 +1,260 @@
+{
+	"name": "SSectionTableDev",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseDev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Name_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Title_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_1_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_2_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Short_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Section_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Sub_Section_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Name_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Title_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_1_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_2_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Short_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Section_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Sub_Section_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Name_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Title_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_1_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_2_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Short_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Section_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Sub_Section_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Street_Adress",
+				"type": "nvarchar"
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "State",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Zip",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Continent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tel",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Concept",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Artists",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Event",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Categorie",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Femme",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Homme",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Actu",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Public",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Visible",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Id_Parent",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Section_Order",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_media",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Date_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Date_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Keywords",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Search",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SSection"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

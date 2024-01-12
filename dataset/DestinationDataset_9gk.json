@@ -1,0 +1,42 @@
+{
+	"name": "DestinationDataset_9gk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseDev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKU",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Code_Country",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Code_Currency",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Amount",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Prices"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

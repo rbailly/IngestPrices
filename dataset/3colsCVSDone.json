@@ -1,0 +1,38 @@
+{
+	"name": "3colsCVSDone",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragePROD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Elookbooks_pricing.csv",
+				"folderPath": "Elookbook_pricing/done",
+				"container": "private"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "HUJ01LPD2U",
+				"type": "String"
+			},
+			{
+				"name": "PVD Devise AE AED                       ",
+				"type": "String"
+			},
+			{
+				"name": "4400",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

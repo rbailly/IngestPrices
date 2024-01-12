@@ -1,0 +1,35 @@
+{
+	"name": "DDatasTableProd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlPROD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Champ_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Champ_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Champ_3",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DDatas"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

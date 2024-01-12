@@ -1,0 +1,42 @@
+{
+	"name": "SourceDataset_9gk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageDev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "prices_maison_4Colonnes.csv",
+				"folderPath": "prices",
+				"container": "private"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SKU",
+				"type": "String"
+			},
+			{
+				"name": "Code_Country",
+				"type": "String"
+			},
+			{
+				"name": "Code_Currency",
+				"type": "String"
+			},
+			{
+				"name": "Amount",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

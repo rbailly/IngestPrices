@@ -1,0 +1,312 @@
+{
+	"name": "MMediaTableDev",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseDev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Title_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_1_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_2_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Section_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Sub_Section_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Title_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_1_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_2_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Section_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Sub_Section_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Title_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_1_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Title_2_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Univers_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Section_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sub_Sub_Section_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "File_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Media_Order",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Copyright",
+				"type": "nvarchar"
+			},
+			{
+				"name": "References",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Downloadable",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Visible",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Id_Section",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_Public",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_News",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Search",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Keywords",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is_Archive",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Info_1_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_2_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_3_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_4_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_5_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_6_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_1_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_2_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_3_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_4_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_5_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_6_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_1_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_2_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_3_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_4_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_5_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_6_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_7_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_8_Fr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_8_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_8_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_7_Jp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_7_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Info_Is_Public",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Client_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is_Searchable",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EC",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MMedia"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

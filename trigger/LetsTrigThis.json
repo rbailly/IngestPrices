@@ -1,0 +1,24 @@
+{
+	"name": "LetsTrigThis",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "IngestPricesProd",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/private/blobs/Elookbook_pricing/Elookbooks_pricing.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c713ff72-efbe-4a1c-afb0-ac0a22930844/resourceGroups/diorpress_prd-01-rgroup/providers/Microsoft.Storage/storageAccounts/aeuwdiorwaprd001sa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "NavContainerTableProd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlPROD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CurrentNav",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trash",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Site",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "NavContainer"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

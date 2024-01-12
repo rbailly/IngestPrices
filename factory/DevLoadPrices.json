@@ -1,0 +1,9 @@
+{
+	"name": "DevLoadPrices",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "aa84442f-815f-41bd-b57f-77e1eb52b2af",
+		"tenantId": "47abbbbc-b105-437d-9a5f-1d3953dc944f"
+	}
+}
